@@ -75,7 +75,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 
 		let allConstraints = PAConstraintsUtils.concatenateConstraintsFromString([
 			"V:|-2-[iconImageView]-2-|",
-			"H:|-0-[iconImageView(40)]",
+			"H:|-0-[iconImageView(30)]",
 			"V:|-2-[rightDetailsContainer]-2-|",
 			"H:[rightDetailsContainer(58)]-0-|",
 			"V:|-8-[titleLabel]-2-[detailsLabel]",
@@ -114,7 +114,7 @@ class PAPermissionsTableViewCell: UITableViewCell {
 			self.titleLabel.adjustsFontSizeToFitWidth = true
 		}
 		
-		self.titleLabel.font = UIFont(name: "HelveticaNeue-Light", size: 15)
+		self.titleLabel.font = UIFont(name: "HelveticaNeue-Light", size: 16)
 		self.titleLabel.minimumScaleFactor = 0.1
 		self.titleLabel.textColor = self.tintColor
 	}
