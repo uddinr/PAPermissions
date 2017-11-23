@@ -78,7 +78,7 @@ class CustomPermissionsViewController: PAPermissionsViewController {
 		//self.backgroundImage = UIImage(named: "background.jpg")
 		//self.useBlurBackground = true
 		self.titleText = "My Awesome App"
-		self.detailsText = "Please enable the following"
+		self.detailsText = "Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh, Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh, Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh, Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh, Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh, Please enable the following asdasd jihd asdjnakd adkjahd akdbaksjdb kjh"
 	}
 	
 	override func didReceiveMemoryWarning() {
