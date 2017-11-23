@@ -248,7 +248,7 @@ class PAPermissionsView: UIView, UITableViewDataSource, UITableViewDelegate {
 		var allConstraints = [NSLayoutConstraint]()
 		//"V:|-68-[titleLabel(43)]-40-[detailsLabel(22)]-15-[tableView]-10-|"
 		let verticalConstraints = NSLayoutConstraint.constraints(
-			withVisualFormat: "V:|-20-[titleLabel]-20-[detailsLabel]-15-[tableView]-10-[continueButton(30)]-20-|",
+			withVisualFormat: "V:|-40-[titleLabel]-20-[detailsLabel]-15-[tableView]-10-[continueButton(30)]-20-|",
 			options: [],
 			metrics: nil,
 			views: views)
