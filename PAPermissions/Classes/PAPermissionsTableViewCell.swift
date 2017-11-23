@@ -75,10 +75,10 @@ class PAPermissionsTableViewCell: UITableViewCell {
 
 		let allConstraints = PAConstraintsUtils.concatenateConstraintsFromString([
 			"V:|-2-[iconImageView]-2-|",
-			"H:|-0-[iconImageView(15)]",
+			"H:|-0-[iconImageView(40)]",
 			"V:|-2-[rightDetailsContainer]-2-|",
 			"H:[rightDetailsContainer(58)]-0-|",
-			"V:|-8-[titleLabel(18)]-2-[detailsLabel(13)]",
+			"V:|-8-[titleLabel]-2-[detailsLabel]",
 			"H:[iconImageView]-8-[titleLabel]-4-[rightDetailsContainer]",
 			"H:[iconImageView]-8-[detailsLabel]-4-[rightDetailsContainer]"
 			], views: views)
@@ -126,10 +126,12 @@ class PAPermissionsTableViewCell: UITableViewCell {
 			self.addSubview(detailsLabel)
 			self.detailsLabel = detailsLabel
 			self.detailsLabel.text = "details"
-			self.detailsLabel.adjustsFontSizeToFitWidth = true
+			//self.detailsLabel.adjustsFontSizeToFitWidth = true
+            self.detailsLabel.numberOfLines = 0
+            self.detailsLabel.lineBreakMode = .byWordWrapping
 		}
 		
-		self.detailsLabel.font = UIFont(name: "HelveticaNeue-Light", size: 11)
+		self.detailsLabel.font = UIFont(name: "HelveticaNeue-Light", size: 12)
 		self.detailsLabel.minimumScaleFactor = 0.1
 		self.detailsLabel.textColor = self.tintColor
 	}
